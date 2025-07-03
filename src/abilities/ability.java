@@ -3,8 +3,6 @@ package abilities;
 import java.util.ArrayList;
 import java.util.List;
 
-import habilities.Ability;
-
 enum costType {
     MANA,
     HP;
