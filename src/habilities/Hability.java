@@ -1,5 +1,8 @@
 package habilities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 enum costType {
     MANA,
     HP;
@@ -32,5 +35,14 @@ public class Hability {
 
     public costType getType() {
         return type;
+    }
+
+    public List<Hability> hunterHabilities(){
+        List<Hability> habilities = new ArrayList<>();
+        habilities.add(new Hability("Hunter's Mark", "", 10, costType.MANA));
+        habilities.add(new Hability("Trap", "", 15, costType.MANA));
+        habilities.add(new Hability("Summon Pet :3", "", 20, costType.MANA));
+        habilities.add(new Hability("Flame Arrow", "", 20, costType.MANA));
+        return habilities;
     }
 }
