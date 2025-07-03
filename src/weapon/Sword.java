@@ -1,14 +1,11 @@
 package weapon;
 
+import java.util.ArrayList;
 
 public class Sword extends Weapon{
-    public Sword(String name){
-        super(name, WeaponType.ShortRange, 25);
+    public Sword(String name, int damage){
+        super(name, WeaponType.ShortRange, damage);
     }
 
-    @Override
-    public void action() {
-        throw new UnsupportedOperationException("Unimplemented method 'action'");
-    }
     
 }

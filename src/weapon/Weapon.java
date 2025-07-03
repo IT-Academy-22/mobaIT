@@ -1,6 +1,8 @@
 package weapon;
 
-public abstract class Weapon{
+import java.util.List;
+
+public class Weapon{
     protected String name;
     protected WeaponType type;
     protected int damage;
@@ -11,6 +13,17 @@ public abstract class Weapon{
         this.type = type;
         this.damage = damage;
     }
-    
-    public abstract void action();   
+
+    public String getName(){
+        return this.name;
+    }
+    public WeaponType getWeaponType(){
+        return this.getWeaponType();
+    }
+    public int getDamage(){
+        return this.damage;    
+    }
+    public List<Role> getRole(){
+        return this.role;
+    }
 }
