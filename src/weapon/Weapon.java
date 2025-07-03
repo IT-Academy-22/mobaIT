@@ -1,11 +1,16 @@
-package Weapon;
+package weapon;
 
 public abstract class Weapon{
-    private String name;
-    private WeaponType type;
-    private int demage;
-    private List<Role> role;
-
-    public abstract void action();
+    protected String name;
+    protected WeaponType type;
+    protected int damage;
+    protected List<Role> role;
     
+    public Weapon(String name, WeaponType type, int damage){
+        this.name = name;
+        this.type = type;
+        this.damage = damage;
+    }
+    
+    public abstract void action();   
 }
