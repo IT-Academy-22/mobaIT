@@ -39,13 +39,13 @@ public class Ability {
         return type;
     }
 
-    public List<ability> hunterHabilities(){
-        List<ability> habilities = new ArrayList<>();
-        habilities.add(new ability("Hunter's Mark", "", 10, costType.MANA));
-        habilities.add(new ability("Trap", "", 15, costType.MANA));
-        habilities.add(new ability("Summon Pet :3", "", 20, costType.MANA));
-        habilities.add(new ability("Flame Arrow", "", 20, costType.MANA));
-        return habilities;
+    public List<Ability> hunterHabilities(){
+        List<Ability> abilities = new ArrayList<>();
+        abilities.add(new Ability("Hunter's Mark", "", 10, costType.MANA));
+        abilities.add(new Ability("Trap", "", 15, costType.MANA));
+        abilities.add(new Ability("Summon Pet :3", "", 20, costType.MANA));
+        abilities.add(new Ability("Flame Arrow", "", 20, costType.MANA));
+        return abilities;
     }
 
     public List<Ability> assassinAbilities(){
@@ -54,6 +54,7 @@ public class Ability {
         abilities.add(new Ability("Backstab", "", 10, costType.MANA));
         abilities.add(new Ability("Bleed", "", 10, costType.MANA));
         abilities.add(new Ability("Poison", "", 10, costType.MANA));
+        return abilities;
     }
 
     public List<Ability> tankAbilities(){
@@ -62,6 +63,7 @@ public class Ability {
         abilities.add(new Ability("Maximum Defense", "", 10, costType.MANA));
         abilities.add(new Ability("Shield Bash", "", 10, costType.MANA));
         abilities.add(new Ability("Desenfer´s Oath", "", 10, costType.MANA));
+        return abilities;
     }
 
     public List<Ability> supportAbilities(){
@@ -70,6 +72,7 @@ public class Ability {
         abilities.add(new Ability("Magic Shield", "", 10, costType.MANA));
         abilities.add(new Ability("Encourage", "", 10, costType.MANA));
         abilities.add(new Ability("Speed Boost", "", 10, costType.MANA));
+        return abilities;
     }
 
     public List<Ability> mageAbilities(){
@@ -78,7 +81,8 @@ public class Ability {
         abilities.add(new Ability("Lightning Chains", "", 10, costType.MANA));
         abilities.add(new Ability("Summon Roots", "", 10, costType.MANA));
         abilities.add(new Ability("Polymorth", "", 10, costType.MANA));
+        return abilities;
     }
-    
+
 }
 
