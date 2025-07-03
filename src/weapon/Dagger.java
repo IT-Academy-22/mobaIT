@@ -2,7 +2,7 @@ package weapon;
 
 public class Dagger extends Weapon {
 
-    public Dagger(String name, int damage) {
+    public Dagger() {
         super("Death Dagger", WeaponType.Meele, 30);
     }
 }
