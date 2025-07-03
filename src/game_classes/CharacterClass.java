@@ -109,15 +109,8 @@ public abstract class CharacterClass {
 
 
 
-    public CharacterClass(String name, int maxHp, int baseAttack, int baseDefense,
-            int resource, List<String> skills, List<String> weapons) {
-        this.name = name;
-        this.maxHp = maxHp;
-        this.baseAttack = baseAttack;
-        this.baseDefense = baseDefense;
-        this.resource = resource;
-        this.skills = skills;
-        this.weapons = weapons;
+    public CharacterClass() {
+
     }
 
     public void displayStatus() {
