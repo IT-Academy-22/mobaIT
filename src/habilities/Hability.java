@@ -1,35 +1,36 @@
-package habilidades;
+package habilities;
 
-enum costType    {
-    MANA, HP;
+enum costType {
+    MANA,
+    HP;
 }
 
 public class Hability {
     private String name;
     private String description;
-    private costType costType;
     private int cost;
+    private costType type;
 
-    public Hability(String nome, String descricao, costType tipoCusto, int custo) {
-        this.name = nome;
-        this.description = descricao;
-        this.costType = tipoCusto;
-        this.cost = custo;
+    public Hability(String name, String description, int cost, costType type) {
+        this.name = name;
+        this.description = description;
+        this.cost = cost;
+        this.type = type;
     }
 
-    public String getNome() {
+    public String getName() {
         return name;
     }
 
-    public String getDescricao() {
+    public String getDescription() {
         return description;
     }
 
-    public costType getTipoCusto() {
-        return costType;
+    public int getCost() {
+        return cost;
     }
 
-    public int getCusto() {
-        return cost;
+    public costType getType() {
+        return type;
     }
 }
