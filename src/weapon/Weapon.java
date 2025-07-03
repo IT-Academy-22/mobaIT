@@ -1,9 +1,11 @@
+package Weapon;
+
 public abstract class Weapon{
     private String name;
     private WeaponType type;
     private int demage;
-    private Role role;
+    private List<Role> role;
 
-    public void action();
+    public abstract void action();
     
 }
