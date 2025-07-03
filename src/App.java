@@ -38,20 +38,20 @@ public class App {
 
     public static void initializeChampions() {
         championsByClass.put("Mage", Arrays.asList(
-                new Champion("Kael", "Mage", 500, 300, "Mana", 55, 30, "Human", Arrays.asList("Fireball", "Frost Nova", "Arcane Blast")),
-                new Champion("Yumi", "Mage", 480, 350, "Mana", 50, 28, "Elf", Arrays.asList("Illusion", "Mirror Image", "Mana Drain"))
+                new Champion("Kael", "Mage", 500, 300, "Mana", 55, 35,  30, "Human", Arrays.asList("Fireball", "Frost Nova", "Arcane Blast")),
+                new Champion("Yumi", "Mage", 480, 350, "Mana", 50, 35,  28, "Elf", Arrays.asList("Illusion", "Mirror Image", "Mana Drain"))
         ));
         championsByClass.put("Tank", Arrays.asList(
-                new Champion("Gruk", "Tank", 800, 0, "Stamina", 40, 60, "Orc", Arrays.asList("Shield Slam", "Taunt", "Fortify"))
+                new Champion("Gruk", "Tank", 800, 0, "Stamina", 40, 35,  60, "Orc", Arrays.asList("Shield Slam", "Taunt", "Fortify"))
         ));
         championsByClass.put("Hunter", Arrays.asList(
-                new Champion("Lira", "Hunter", 550, 200, "Energy", 60, 35, "Human", Arrays.asList("Arrow Shot", "Trap", "Eagle Eye"))
+                new Champion("Lira", "Hunter", 550, 200, "Energy", 60, 35, 100, "Human", Arrays.asList("Arrow Shot", "Trap", "Eagle Eye"))
         ));
         championsByClass.put("Support", Arrays.asList(
-                new Champion("Elyra", "Support", 450, 400, "Mana", 35, 25, "Elf", Arrays.asList("Heal", "Protective Shield", "Revive"))
+                new Champion("Elyra", "Support", 450, 400, "Mana", 35, 35,  25, "Elf", Arrays.asList("Heal", "Protective Shield", "Revive"))
         ));
         championsByClass.put("Assassin", Arrays.asList(
-                new Champion("Voltan", "Assassin", 600, 100, "Energy", 70, 20, "Human", Arrays.asList("Backstab", "Smoke Bomb", "Poison Blade"))
+                new Champion("Voltan", "Assassin", 600, 100, "Energy", 70, 35,  20, "Human", Arrays.asList("Backstab", "Smoke Bomb", "Poison Blade"))
         ));
     }
 
@@ -164,6 +164,7 @@ public class App {
             System.out.printf("║ HP: %-46d %n", c.hp);
             System.out.printf("║ Resource: %-38d (%s) %n", c.resource, c.resourceType);
             System.out.printf("║ Base Attack: %-36d %n", c.baseAttack);
+            System.out.printf("║ Speed: %-44d %n", c.speed);
             System.out.printf("║ Defense: %-42d %n", c.defense);
             System.out.println("║ Skills:                                               ");
             for (String skill : c.skills) {
@@ -189,16 +190,17 @@ public class App {
     // Champion data structure
     static class Champion {
         String name, championClass, resourceType, race;
-        int hp, resource, baseAttack, defense;
+        int hp, resource, baseAttack, speed, defense;
         List<String> skills;
 
-        public Champion(String name, String championClass, int hp, int resource, String resourceType, int baseAttack, int defense, String race, List<String> skills) {
+        public Champion(String name, String championClass, int hp, int resource, String resourceType, int baseAttack, int speed, int defense, String race, List<String> skills) {
             this.name = name;
             this.championClass = championClass;
             this.hp = hp;
             this.resource = resource;
             this.resourceType = resourceType;
             this.baseAttack = baseAttack;
+            this.speed = speed;
             this.defense = defense;
             this.race = race;
             this.skills = skills;
