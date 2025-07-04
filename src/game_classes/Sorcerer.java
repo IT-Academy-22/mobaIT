@@ -2,7 +2,7 @@ package game_classes;
 
 import java.util.Arrays;
 
-public class Sorcerer extends CharacterClass {
+public class Sorcerer extends Role {
 
     public Sorcerer(String name) {
         super();

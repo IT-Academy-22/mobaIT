@@ -2,7 +2,7 @@ package game_classes;
 
 import java.util.Arrays;
 
-public class Support extends CharacterClass {
+public class Support extends Role {
 
     public Support(String name) {
         super(); 

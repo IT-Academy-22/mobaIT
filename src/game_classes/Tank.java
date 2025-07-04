@@ -2,7 +2,7 @@ package game_classes;
 
 import java.util.Arrays;
 
-public class Tank extends CharacterClass {
+public class Tank extends Role {
 
     public Tank(String name) {
         super(); 

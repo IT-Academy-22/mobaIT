@@ -2,7 +2,7 @@ package game_classes;
 
 import java.util.Arrays;
 
-public class Hunter extends CharacterClass {
+public class Hunter extends Role {
 
     public Hunter(String name) {
         super(); 
