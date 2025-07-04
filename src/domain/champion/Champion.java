@@ -13,13 +13,14 @@ public class Champion {
     private final Role role;
     private Weapon weapon = null;
 
-    public Champion(String name, Skill[] skill, int HP, int resource, ResourceType resourceType, int attack, int defense, Race race, Role role) {
+    public Champion(String name, Skill[] skill, int HP, int resource, ResourceType resourceType, int attack, int defense,int speed, Race race, Role role) {
         this.name = name;
         this.skill = skill;
         this.HP = HP + role.HP;
         this.resource = role.resourceType.equals("HP") ? this.HP : resource + role.resource;
         this.attack = attack + role.attack;
         this.defense = defense + role.defense;
+        this.speed = speed + role.speed;
         this.race = race;
         this.role = role;
         this.resourceType = role.resourceType;
