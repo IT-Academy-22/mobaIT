@@ -10,3 +10,8 @@ AXE -
 SLINGSHOT - 
 BRASS KNUCLES -
 MAGIC GLOVES - JULIA 
+
+
+Dano ranged = +- 30
+Dano meele = +- 80
+Dano short ranged = +- 50
