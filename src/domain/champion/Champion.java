@@ -4,6 +4,7 @@ import skills.Skill;
 
 import java.util.List;
 
+// Class Champion
 public class Champion {
     private final String name;
     private final List<Skill> skill;
