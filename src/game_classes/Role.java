@@ -1,18 +1,22 @@
 package game_classes;
 
-import java.util.ArrayList;
+import skills.ResourceType;
+import weapon.PreMadeWeapons;
+import weapon.Weapon;
+
 import java.util.List;
 
 public abstract class Role {
 
     protected String name;
-    protected int maxHp;
-    protected int baseAttack;
-    protected int baseDefense;
+    protected int HP;
+    protected int attack;
+    protected int defense;
     protected int resource;
+    protected ResourceType resourceType;
     protected int speed;
     protected List<Weapon> weapons;
-    
+
     public String getName() {
         return name;
     }
@@ -21,40 +25,48 @@ public abstract class Role {
         this.name = name;
     }
 
-
-    public int getMaxHp() {
-        return maxHp;
-    }
-
-    public void setMaxHp(int maxHp) {
-        this.maxHp = maxHp;
-    }
-
-
-    public int getBaseAttack() {
-        return baseAttack;
-    }
-
-    public void setBaseAttack(int baseAttack) {
-        this.baseAttack = baseAttack;
-    }
-
-
-    public int getBaseDefense() {
-        return baseDefense;
-    }
-
-    public void setBaseDefense(int baseDefense) {
-        this.baseDefense = baseDefense;
-    }
-
-
     public int getResource() {
         return resource;
     }
 
     public void setResource(int resource) {
         this.resource = resource;
+    }
+
+
+    public int getHP() {
+        return HP;
+    }
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
+
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+
+
+    public ResourceType getResourceType() {
+        return resourceType;
+    }
+
+    public void setResourceType(ResourceType resourceType) {
+        this.resourceType = resourceType;
     }
 
 
@@ -82,12 +94,11 @@ public abstract class Role {
 
     public void displayStatus() {
         System.out.println("Classe: " + name);
-        System.out.println("Vida: " + maxHp);
-        System.out.println("Dano Base: " + baseAttack);
-        System.out.println("Defesa Base: " + baseDefense);
-        System.out.println("Recurso: " + resource);
-        System.out.println("Habilidades: " + skills);
+        System.out.println("Vida: " + HP);
+        System.out.println("Dano Base: " + attack);
+        System.out.println("Defesa Base: " + defense);
+        System.out.println("Recurso: " + resourceType);
         System.out.println("Armas: " + weapons);
- 
-   }
+
+    }
 }

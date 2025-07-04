@@ -1,6 +1,6 @@
 package game_classes;
 
-import java.util.Arrays;
+import skills.ResourceType;
 
 public class Sorcerer extends Role {
 
@@ -8,10 +8,11 @@ public class Sorcerer extends Role {
         super();
 
         setName(name);
-        setMaxHp(1200);
-        setBaseAttack(400); 
-        setBaseDefense(100); 
-        setResource(300); 
+        setHP(600);
+        setAttack(400);
+        setDefense(100);
+        setResourceType(ResourceType.MANA);
+        setResource(1000);
         setSpeed(80); 
 
         // setSkills(Arrays.asList("Bola de Fogo", "Teleporte", "Barreira Arcana"));

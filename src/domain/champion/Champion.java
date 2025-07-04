@@ -1,10 +1,12 @@
 package domain.champion;
 
+import game_classes.Role;
+import skills.ResourceType;
 import skills.Skill;
+import weapon.Weapon;
 
 import java.util.List;
 
-// Class Champion
 public class Champion {
     private final String name;
     private final List<Skill> skill;
@@ -21,14 +23,14 @@ public class Champion {
     public Champion(String name, List<Skill> skill, int HP, int resource, ResourceType resourceType, int attack, int defense,int speed, Race race, Role role) {
         this.name = name;
         this.skill = skill;
-        this.HP = HP + role.HP;
-        this.resource = role.resourceType.equals("HP") ? this.HP : resource + role.resource;
-        this.attack = attack + role.attack;
-        this.defense = defense + role.defense;
-        this.speed = speed + role.speed;
+        this.HP = HP + role.getHP();
+        this.resource = role.getResourceType().equals(ResourceType.HP) ? this.HP : resource + role.getResource();
+        this.attack = attack + role.getAttack();
+        this.defense = defense + role.getDefense();
+        this.speed = speed + role.getSpeed();
         this.race = race;
         this.role = role;
-        this.resourceType = role.resourceType;
+        this.resourceType = role.getResourceType();
     }
 
     private void equipWeapon(Weapon weapon){
@@ -40,7 +42,7 @@ public class Champion {
     }
 
 
-    public Skill[] getSkill() {
+    public List<Skill> getSkill() {
         return this.skill;
     }
 
@@ -96,7 +98,6 @@ public class Champion {
     public Race getRace() {
         return this.race;
     }
-
 
     public Role getRole() {
         return this.role;
