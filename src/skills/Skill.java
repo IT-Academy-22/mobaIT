@@ -64,7 +64,7 @@ public class Skill {
         return skills;
     }
     
-    public List<Skill> supportAbilities(){
+    public List<Skill> supportAbilities(){ //sup GAP abism
         List<Skill> skills = new ArrayList<>();
         skills.add(new Skill("Heal", "Restores 40% of target's maximum health instantly", 30, costType.MANA));
         skills.add(new Skill("Magic Shield", "Creates a barrier that absorbs 200 damage for 30 seconds", 25, costType.MANA));
