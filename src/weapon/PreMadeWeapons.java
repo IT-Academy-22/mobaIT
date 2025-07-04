@@ -12,5 +12,10 @@ public class PreMadeWeapons {
         weapons.add(new Weapon("Regular Staff", WeaponType.ShortRange, 60));
         weapons.add(new Weapon("Six-Shooter", WeaponType.LongRange, 30));
         weapons.add(new Weapon("Axe", WeaponType.ShortRange, 65));
+        weapons.add(new Weapon("Slingshot", WeaponType.LongRange, 30));
+        weapons.add(new Weapon("Hex Hands", WeaponType.LongRange, 30));
+        weapons.add(new Weapon("Bonebreakers", WeaponType.Meele, 30));
+        weapons.add(new Weapon("Thor Hammer", WeaponType.ShortRange, 65));
+        weapons.add(new Weapon("Doom Bat", WeaponType.ShortRange, 65));
     }
 }
