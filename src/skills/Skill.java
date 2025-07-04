@@ -37,7 +37,7 @@ public class Skill {
         return type;
     }
 
-    public List<Skill> hunterAbilities(){
+    public List<Skill> hunterSkills(){
         List<Skill> skills = new ArrayList<>();
         skills.add(new Skill("Hunter's Mark", "Marks an enemy, increasing damage dealt to it by 25% for 30 seconds", 15, costType.MANA));
         skills.add(new Skill("Trap", "Places a concealed trap that deals damage and slows enemies by 50% for 5 seconds", 20, costType.MANA));
@@ -46,7 +46,7 @@ public class Skill {
         return skills;
     }
     
-    public List<Skill> assassinAbilities(){
+    public List<Skill> assassinSkills(){
         List<Skill> skills = new ArrayList<>();
         skills.add(new Skill("Stealth", "Become invisible for 10 seconds, increasing next attack damage by 100%", 20, costType.MANA));
         skills.add(new Skill("Backstab", "Strike from behind dealing 300% weapon damage, must be behind target", 15, costType.MANA));
@@ -55,7 +55,7 @@ public class Skill {
         return skills;
     }
     
-    public List<Skill> tankAbilities(){
+    public List<Skill> tankSkills(){
         List<Skill> skills = new ArrayList<>();
         skills.add(new Skill("Guardian's Pace", "Reduces damage taken by 40% and reflects 20% back to attackers for 15 seconds", 25, costType.MANA));
         skills.add(new Skill("Maximum Defense", "Becomes immobile but immune to all damage for 5 seconds", 30, costType.MANA));
@@ -64,7 +64,7 @@ public class Skill {
         return skills;
     }
     
-    public List<Skill> supportAbilities(){ //sup GAP abism
+    public List<Skill> supportSkills(){ //sup GAP abism
         List<Skill> skills = new ArrayList<>();
         skills.add(new Skill("Heal", "Restores 40% of target's maximum health instantly", 30, costType.MANA));
         skills.add(new Skill("Magic Shield", "Creates a barrier that absorbs 200 damage for 30 seconds", 25, costType.MANA));
@@ -73,7 +73,7 @@ public class Skill {
         return skills;
     }
     
-    public List<Skill> mageAbilities(){
+    public List<Skill> mageSkills(){
         List<Skill> skills = new ArrayList<>();
         skills.add(new Skill("FIRE BALL!!!", "Hurls a massive fireball dealing high damage in a large area", 40, costType.MANA));
         skills.add(new Skill("Lightning Chains", "Strikes target with lightning that jumps to 3 nearby enemies", 35, costType.MANA));
