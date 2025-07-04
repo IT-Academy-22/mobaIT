@@ -1,8 +1,12 @@
 package domain.champion;
 
+import skills.Skill;
+
+import java.util.List;
+
 public class Champion {
     private final String name;
-    private final Skill[] skill;
+    private final List<Skill> skill;
     private int HP;
     private int resource;
     private ResourceType resourceType;
@@ -13,7 +17,7 @@ public class Champion {
     private final Role role;
     private Weapon weapon = null;
 
-    public Champion(String name, Skill[] skill, int HP, int resource, ResourceType resourceType, int attack, int defense,int speed, Race race, Role role) {
+    public Champion(String name, List<Skill> skill, int HP, int resource, ResourceType resourceType, int attack, int defense,int speed, Race race, Role role) {
         this.name = name;
         this.skill = skill;
         this.HP = HP + role.HP;
