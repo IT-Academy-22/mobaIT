@@ -1,5 +1,6 @@
 package game_classes;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Role {
@@ -11,7 +12,7 @@ public abstract class Role {
     protected int resource;
     protected int speed;
     protected List<String> skills;
-    protected List<String> weapons;
+    protected List<Weapon> weapons;
     
     public String getName() {
         return name;
@@ -76,17 +77,16 @@ public abstract class Role {
     }
 
 
-    public List<String> getWeapons() {
+    public List<Weapon> getWeapons() {
         return weapons;
     }
 
-    public void setWeapons(List<String> weapons) {
+    public void setWeapons(List<Weapon> weapons) {
         this.weapons = weapons;
     }
 
 
     public Role() {
-
     }
 
     public void displayStatus() {
