@@ -17,12 +17,12 @@ public class Champion {
         this.name = name;
         this.skill = skill;
         this.HP = HP + role.HP;
-        this.resource = resource + role.resource;
+        this.resource = role.resourceType.equals("HP") ? this.HP : resource + role.resource;
         this.attack = attack + role.attack;
         this.defense = defense + role.defense;
         this.race = race;
         this.role = role;
-        this.resourceType = role.resourceType.equals("HP") ? this.HP : role.resourceType;
+        this.resourceType = role.resourceType;
     }
 
     private void equipWeapon(Weapon weapon){
