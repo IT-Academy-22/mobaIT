@@ -11,7 +11,6 @@ public abstract class Role {
     protected int baseDefense;
     protected int resource;
     protected int speed;
-    protected List<String> skills;
     protected List<Weapon> weapons;
     
     public String getName() {
@@ -68,15 +67,6 @@ public abstract class Role {
     }
 
 
-    public List<String> getSkills() {
-        return skills;
-    }
-
-    public void setSkills(List<String> skills) {
-        this.skills = skills;
-    }
-
-
     public List<Weapon> getWeapons() {
         return weapons;
     }
@@ -87,6 +77,7 @@ public abstract class Role {
 
 
     public Role() {
+        this.weapons = new PreMadeWeapons().getWeapons();
     }
 
     public void displayStatus() {

@@ -13,6 +13,8 @@ public class Tank extends Role {
         setBaseDefense(500);
         setResource(100);
         setSpeed(50);
+        setWeapons(Arrays.asList(new PreMadeWeapons().getWeapons()));
+
         // setSkills(Arrays.asList("Provocar", "Barreira de Ferro", "Carga Blindada"));
         // setWeapons(Arrays.asList("Martelo Pesado", "Escudo Torre"));
     }
