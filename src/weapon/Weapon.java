@@ -1,12 +1,10 @@
 package weapon;
 
-import java.util.List;
 
 public class Weapon{
-    protected String name;
-    protected WeaponType type;
-    protected int damage;
-    protected List<Role> role;
+    private String name;
+    private WeaponType type;
+    private int damage;
     
     public Weapon(String name, WeaponType type, int damage){
         this.name = name;
@@ -23,7 +21,5 @@ public class Weapon{
     public int getDamage(){
         return this.damage;    
     }
-    public List<Role> getRole(){
-        return this.role;
-    }
+    
 }

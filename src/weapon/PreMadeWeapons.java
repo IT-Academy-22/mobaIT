@@ -3,7 +3,7 @@ package weapon;
 import java.util.List;
 
 public class PreMadeWeapons {
-    List<Weapon> weapons;
+    private List<Weapon> weapons;
     public PreMadeWeapons(){
         weapons.add(new Weapon("King's Sword", WeaponType.ShortRange, 55));
         weapons.add(new Weapon("Super Bow", WeaponType.LongRange, 55));
@@ -17,5 +17,9 @@ public class PreMadeWeapons {
         weapons.add(new Weapon("Bonebreakers", WeaponType.Meele, 40));
         weapons.add(new Weapon("Thor Hammer", WeaponType.ShortRange, 65));
         weapons.add(new Weapon("Doom Bat", WeaponType.ShortRange, 60));
+    }
+
+    public List<Weapon> getWeapons(){
+        return this.weapons;
     }
 }
