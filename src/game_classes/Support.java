@@ -1,6 +1,6 @@
 package game_classes;
 
-import java.util.Arrays;
+import skills.ResourceType;
 
 public class Support extends Role {
 
@@ -8,10 +8,11 @@ public class Support extends Role {
         super(); 
 
         setName(name);
-        setMaxHp(2000); 
-        setBaseAttack(100); 
-        setBaseDefense(300);
-        setResource(400); 
+        setHP(750);
+        setAttack(100);
+        setDefense(300);
+        setResourceType(ResourceType.MANA);
+        setResource(600);
         setSpeed(100);
 
         // setSkills(Arrays.asList("Cura em Área", "Escudo de Luz", "Benção da Vida"));

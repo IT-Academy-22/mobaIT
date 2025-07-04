@@ -1,5 +1,8 @@
 package game_classes;
 
+import skills.ResourceType;
+import weapon.PreMadeWeapons;
+
 import java.util.Arrays;
 
 public class Tank extends Role {
@@ -8,12 +11,13 @@ public class Tank extends Role {
         super(); 
 
         setName(name);
-        setMaxHp(3000);
-        setBaseAttack(150);
-        setBaseDefense(500);
-        setResource(100);
+        setHP(2000);
+        setAttack(150);
+        setDefense(200);
+        setResourceType(ResourceType.MANA);
+        setResource(500);
         setSpeed(50);
-        setWeapons(Arrays.asList(new PreMadeWeapons().getWeapons()));
+        setWeapons(new PreMadeWeapons().getWeapons());
 
         // setSkills(Arrays.asList("Provocar", "Barreira de Ferro", "Carga Blindada"));
         // setWeapons(Arrays.asList("Martelo Pesado", "Escudo Torre"));

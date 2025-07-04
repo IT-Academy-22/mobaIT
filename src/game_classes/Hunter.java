@@ -1,6 +1,6 @@
 package game_classes;
 
-import java.util.Arrays;
+import skills.ResourceType;
 
 public class Hunter extends Role {
 
@@ -8,10 +8,11 @@ public class Hunter extends Role {
         super(); 
 
         setName(name);
-        setMaxHp(1800); 
-        setBaseAttack(300); 
-        setBaseDefense(200); 
-        setResource(150); 
+        setHP(1800);
+        setAttack(300);
+        setDefense(200);
+        setResourceType(ResourceType.MANA);
+        setResource(500);
         setSpeed(120); 
 
         // setSkills(Arrays.asList("Tiro Preciso", "Armadilha de Urso", "Camuflagem"));
